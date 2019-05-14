@@ -31,7 +31,7 @@ extension MessagesTableViewController {
             let payloadsTableViewController = segue.destination as? PayloadsTableViewController else {
             return
         }
-        payloadsTableViewController.payloads = detectedMessages[indexPath.row].records
+        payloadsTableViewController.message = detectedMessages[indexPath.row]
     }
 
 }
