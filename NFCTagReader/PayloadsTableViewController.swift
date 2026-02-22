@@ -8,7 +8,7 @@ Payload table view controller
 import UIKit
 import CoreNFC
 
-extension NFCTypeNameFormat: CustomStringConvertible {
+extension NFCTypeNameFormat: @retroactive CustomStringConvertible {
     public var description: String {
         switch self {
         case .nfcWellKnown: return "NFC Well Known type"
